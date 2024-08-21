@@ -142,6 +142,13 @@ locals {
         )) : value
         if contains(try(local.exclude_archetype_definitions["exclude_${adk}"].policy_definitions, local.empty_list), value) != true
       ],
+      policy_exemptions = [
+        for value in distinct(concat(
+          adv.policy_exemptions,
+          try(local.extend_archetype_definitions["extend_${adk}"].policy_exemptions, local.empty_list)
+        )) : value
+        if contains(try(local.exclude_archetype_definitions["exclude_${adk}"].policy_exemptions, local.empty_list), value) != true
+      ],
       policy_set_definitions = [
         for value in distinct(concat(
           adv.policy_set_definitions,

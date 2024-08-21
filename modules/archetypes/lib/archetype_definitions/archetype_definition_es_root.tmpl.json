@@ -143,6 +143,7 @@
       "Deploy-VNET-HubSpoke",
       "Deploy-Windows-DomainJoin"
     ],
+    "policy_exemptions": [],
     "policy_set_definitions": [
       "Audit-UnusedResourcesCostOptimization",
       "Deny-PublicPaaSEndpoints",

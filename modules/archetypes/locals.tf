@@ -38,6 +38,7 @@ locals {
   resource_types = {
     policy_assignment     = "Microsoft.Authorization/policyAssignments"
     policy_definition     = "Microsoft.Authorization/policyDefinitions"
+    policy_exemption     = "Microsoft.Authorization/policyExemptions"
     policy_set_definition = "Microsoft.Authorization/policySetDefinitions"
     role_assignment       = "Microsoft.Authorization/roleAssignments"
     role_definition       = "Microsoft.Authorization/roleDefinitions"
@@ -45,6 +46,7 @@ locals {
   provider_path = {
     policy_assignment     = "${local.scope_id}/providers/Microsoft.Authorization/policyAssignments/"
     policy_definition     = "${local.scope_id}/providers/Microsoft.Authorization/policyDefinitions/"
+    policy_exemption     = "${local.scope_id}/providers/Microsoft.Authorization/policyExemptions/"
     policy_set_definition = "${local.scope_id}/providers/Microsoft.Authorization/policySetDefinitions/"
     role_assignment       = "${local.scope_id}/providers/Microsoft.Authorization/roleAssignments/"
     role_definition       = "/providers/Microsoft.Authorization/roleDefinitions/"
@@ -95,5 +97,6 @@ locals {
     azurerm_policy_set_definition = local.archetype_policy_set_definitions_output
     azurerm_role_assignment       = local.archetype_role_assignments_output
     azurerm_role_definition       = local.archetype_role_definitions_output
+    azurerm_policy_exemption     = local.archetype_policy_exemptions_output
   }
 }

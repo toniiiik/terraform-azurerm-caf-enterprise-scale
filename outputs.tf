@@ -271,3 +271,11 @@ output "azurerm_virtual_hub_connection" {
   }
   description = "Returns the configuration data for all Virtual Hub Connections created by this module."
 }
+
+# The following output is used to ensure all Policy Set
+# Definition data is returned to the root module.
+output "azurerm_policy_exemptions" {
+  value = azapi_resource.policy_exemption
+  # value = local.azurerm_policy_exemptions_enterprise_scale
+  description = "Returns the configuration data for all Policy Exemptions created by this module."
+}

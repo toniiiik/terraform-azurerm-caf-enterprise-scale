@@ -4,6 +4,7 @@
       "Deploy-Log-Analytics"
     ],
     "policy_definitions": [],
+    "policy_exemptions": [],
     "policy_set_definitions": [],
     "role_definitions": [],
     "archetype_config": {
