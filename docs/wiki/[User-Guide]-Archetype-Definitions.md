@@ -28,6 +28,7 @@ Save your custom templates in the custom library location and as long as they ar
 | Archetype Definitions  | `**/archetype_definition_*.{json,yml,yaml,json.tftpl,yml.tftpl,yaml.tftpl}`  |
 | Policy Assignments     | `**/policy_assignment_*.{json,yml,yaml,json.tftpl,yml.tftpl,yaml.tftpl}`     |
 | Policy Definitions     | `**/policy_definition_*.{json,yml,yaml,json.tftpl,yml.tftpl,yaml.tftpl}`     |
+| Policy Exemptions     | `**/policy_exemption_*.{json,yml,yaml,json.tftpl,yml.tftpl,yaml.tftpl}`     |
 | Policy Set Definitions | `**/policy_set_definition_*.{json,yml,yaml,json.tftpl,yml.tftpl,yaml.tftpl}` |
 | Role Definitions       | `**/role_definition_*.{json,yml,yaml,json.tftpl,yml.tftpl,yaml.tftpl}`       |
 
@@ -74,6 +75,11 @@ We have documented some examples showing how to [set parameter values for Policy
           "Policy-Definition-Name-5",
           "Policy-Definition-Name-6"
         ],
+        "policy_set_definitions": [
+          "Policy-Exemption-Name-1",
+          "Policy-Exemption-Name-2",
+        ]
+        ,
         "policy_set_definitions": [
           // List of Policy Set Definitions, as per the "name" field in the library templates
           // We recommend only creating Policy Set Definitions at the root_id scope

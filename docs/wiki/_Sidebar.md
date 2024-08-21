@@ -42,6 +42,7 @@
     - [Override module role assignments][wiki_override_module_role_assignments]
     - [Control policy enforcement mode]([Examples]-Deploy-policies-without-enforcing-them)
     - [Policy assignments with user assigned managed identities]([Examples]-Configure-Policy-UserAssignedIdentity)
+    - [Deploy Policy Exemption]([Examples]-Configure-Policy-Exemption)
   - [Level 400][wiki_examples_level_400]
     - [Deploy using module nesting][wiki_deploy_using_module_nesting]
     - [Deploy using multiple module declarations with orchestration][wiki_deploy_using_multiple_module_declarations_with_orchestration]
